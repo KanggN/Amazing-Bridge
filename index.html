@@ -1,281 +1,333 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet"> <!--Logo font-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <!--Logo font-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    body{
-        background-color: #333;
-        color: #fff;
-    }
-    ul{
-        list-style: none;
-    }
-    .navbar{
-        opacity: 0.8;      
-    }
-    .navbar{      
-        z-index: 2;
-    }
-    .dropdown-menu{
-        border-top: none;
-        border-radius: 0 0 6px 6px;
-    }
-    .navbar-brand{
-        font-family: 'Berkshire Swash', cursive;
-        font-size: 24px;
-        margin-left: 60px;
-    }
-    .brand-icon{
-        position: absolute;
-        margin-left: -50px;
-        margin-top: -8px;
-        height: 40px;
-        width: 40px;
-    }
-    .carousel-item{
-        height: 450px;
-    }
-    .carousel-item{
-        height: 700px;
-    }
-    .carousel-image-1{
-        background: url(golden_gate.jpg);
-        background-size: cover;
-    }
-    .carousel-image-2{
-        background: url(london_bridge.jpg);
-        background-size: cover;
-    }
-    .carousel-image-3{
-        background: url(vasco.jpg);
-        background-size: cover;
-    }
-    .carousel-item:after {
-        content:"";
-        display:block;
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-        background:rgba(0,0,0,0.4);
-    }
-    .fa-user, .fa-pencil {
-      position: absolute;
-      top: 3px;
-      left: 10px;
-      font-size: 40px;
-    }
-    .fa-envelope{
-      position: absolute;
-      top: 5px;
-      left: 8px;
-      font-size: 32px;
-    }
-    #achievement .fa{
-      font-size: 60px;
-      transition: ease-in-out .3s;
-    }
-    #achievement .fa:hover{
-      color: tomato;
-      transform: translateY(-10px);
-      transition: ease-in-out .3s;
-    }
-
-    /*Contact*/
-    .input, .textarea{
-        background-color: transparent;
-        border-color: transparent;
-        border-bottom: 2px solid #ccc;
-        border-radius: 0;
-        transition: all .8s;
-        resize: none;
-        color: #fff;
-    }
-    .input:focus, .textarea:focus{
-        background-color: transparent;
-        border-color: transparent;
-        box-shadow: none;
-        color: #fff;
-        border-bottom: 2px solid #3292a6;
-    }
-    .submit-button{
-        background-color: #3292a6;;
-        color: #eee;
-        padding: 0 80px;
-        font-size: 18px;
-        transition: all .3s;
-    }
-    .submit-button:hover{
-        background-color: rgba(50, 146, 166, 0.8);;
-        transform: translateY(-1.5px);
-    }
-    .label{
-        color: #777;
-        display: block;
-        margin-top: -70px;
-        margin-left: 4px;
-        font-size: 13px;
-        transition: all .3s;
-    }
-    .label-textarea{
-        color: #777;
-        display: block;
-        margin-top: -110px;
-        margin-left: 8px;
-        font-size: 13px;
-        transition: all .5s;
-    }
-    .input:placeholder-shown + .label{
-      transform: translate(20px,20px);
-      opacity: 0;
-      visibility: hidden;
-    }
-    .textarea:placeholder-shown + .label-textarea{
-      transform: translate(20px,30px);
-      opacity: 0;
-      visibility: hidden;
-    }
-    .dot{
-      visibility: hidden;
-    }
-    /*Contact*/
-
-    #booking a{
-        position: fixed;
-        bottom: 100px;
-        right: 20px;
-        animation: booking 2.5s infinite;
-        z-index: 3;
-        transition: all .3s;
-    }
-    #booking a:hover{
-        text-decoration: none;
-        color: tomato;
-        transition: all .3s;
-    }
-    #booking h5{
-        margin-top: -8px;
-    }
-    @keyframes booking {
-        0% {transform: rotate(0deg);}
-        3% {transform: rotate(-10deg);}
-        4% {transform: rotate(10deg);}
-        5% {transform: rotate(0deg);}
-        100% {transform: rotate(0deg);}
-    }
-    
-    #video-play .dark-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-    }
-    #video-play {
-      position: relative;
-      min-height: 200px;
-      background: url('london_bridge.jpg');
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      text-align: center;
-      color: #fff;
-    }
-    /*Test*/
-    header{
-              height: 40vh;
-              background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)) ,
-               url('london_bridge.jpg') no-repeat center center /cover;
-          }
-          header .banner{
-              position: absolute;
-              top: 25%;
-              right: 5%;
-          }
-          header .banner .banner-heading{
-              animation: header 2s;
-          }
-          header .banner .banner-par{
-              animation: header 2s;
-              animation-delay: .5s;
-              animation-fill-mode: backwards;
-          }
-          @keyframes header {
-              0%{
-                    transform: translateX(-100px);
-                    opacity: 0;
-              }
-              100%{
-                    transform: translateX(0px);
-                    opacity: 1;
-              }
-          }
-          /*Test*/
-          #achievement .underline{
-              background-color: deeppink;
-              position: absolute;
-              top: 40px;
-              left: 48%;
-              height: 3px;
-              width: 80px;
-          }
-          #contact .underline{
-              background-color: deeppink;
-              position: absolute;
-              top: 40px;
-              left: 48%;
-              height: 3px;
-              width: 80px;
-          }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .navbar {
+            opacity: 0.8;
+        }
+        
+        .navbar {
+            z-index: 2;
+        }
+        
+        .dropdown-menu {
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+        }
+        
+        .navbar-brand {
+            font-family: 'Berkshire Swash', cursive;
+            font-size: 24px;
+            margin-left: 60px;
+        }
+        
+        .brand-icon {
+            position: absolute;
+            margin-left: -50px;
+            margin-top: -8px;
+            height: 40px;
+            width: 40px;
+        }
+        
+        .carousel-item {
+            height: 450px;
+        }
+        
+        .carousel-item {
+            height: 700px;
+        }
+        
+        .carousel-image-1 {
+            background: url(golden_gate.jpg);
+            background-size: cover;
+        }
+        
+        .carousel-image-2 {
+            background: url(london_bridge.jpg);
+            background-size: cover;
+        }
+        
+        .carousel-image-3 {
+            background: url(vasco.jpg);
+            background-size: cover;
+        }
+        
+        .carousel-item:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .fa-user,
+        .fa-pencil {
+            position: absolute;
+            top: 3px;
+            left: 10px;
+            font-size: 40px;
+        }
+        
+        .fa-envelope {
+            position: absolute;
+            top: 5px;
+            left: 8px;
+            font-size: 32px;
+        }
+        
+        #achievement .fa {
+            font-size: 60px;
+            transition: ease-in-out .3s;
+        }
+        
+        #achievement .fa:hover {
+            color: tomato;
+            transform: translateY(-10px);
+            transition: ease-in-out .3s;
+        }
+        /*Contact*/
+        
+        .input,
+        .textarea {
+            background-color: transparent;
+            border-color: transparent;
+            border-bottom: 2px solid #ccc;
+            border-radius: 0;
+            transition: all .8s;
+            resize: none;
+            color: #fff;
+        }
+        
+        .input:focus,
+        .textarea:focus {
+            background-color: transparent;
+            border-color: transparent;
+            box-shadow: none;
+            color: #fff;
+            border-bottom: 2px solid #3292a6;
+        }
+        
+        .submit-button {
+            background-color: #3292a6;
+            ;
+            color: #eee;
+            padding: 0 80px;
+            font-size: 18px;
+            transition: all .3s;
+        }
+        
+        .submit-button:hover {
+            background-color: rgba(50, 146, 166, 0.8);
+            ;
+            transform: translateY(-1.5px);
+        }
+        
+        .label {
+            color: #777;
+            display: block;
+            margin-top: -70px;
+            margin-left: 4px;
+            font-size: 13px;
+            transition: all .3s;
+        }
+        
+        .label-textarea {
+            color: #777;
+            display: block;
+            margin-top: -110px;
+            margin-left: 8px;
+            font-size: 13px;
+            transition: all .5s;
+        }
+        
+        .input:placeholder-shown+.label {
+            transform: translate(20px, 20px);
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .textarea:placeholder-shown+.label-textarea {
+            transform: translate(20px, 30px);
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .dot {
+            visibility: hidden;
+        }
+        /*Contact*/
+        
+        #booking a {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            animation: booking 2.5s infinite;
+            z-index: 3;
+            transition: all .3s;
+        }
+        
+        #booking a:hover {
+            text-decoration: none;
+            color: tomato;
+            transition: all .3s;
+        }
+        
+        #booking h5 {
+            margin-top: -8px;
+        }
+        
+        @keyframes booking {
+            0% {
+                transform: rotate(0deg);
+            }
+            3% {
+                transform: rotate(-10deg);
+            }
+            4% {
+                transform: rotate(10deg);
+            }
+            5% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        
+        #video-play .dark-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        #video-play {
+            position: relative;
+            min-height: 200px;
+            background: url('london_bridge.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            text-align: center;
+            color: #fff;
+        }
+        /*Test*/
+        
+        header {
+            height: 40vh;
+            background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url('london_bridge.jpg') no-repeat center center /cover;
+        }
+        
+        header .banner {
+            position: absolute;
+            top: 25%;
+            right: 5%;
+        }
+        
+        header .banner .banner-heading {
+            animation: header 2s;
+        }
+        
+        header .banner .banner-par {
+            animation: header 2s;
+            animation-delay: .5s;
+            animation-fill-mode: backwards;
+        }
+        
+        @keyframes header {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+        /*Test*/
+        
+        #achievement .underline {
+            background-color: deeppink;
+            position: absolute;
+            top: 40px;
+            left: 48%;
+            height: 3px;
+            width: 80px;
+        }
+        
+        #contact .underline {
+            background-color: deeppink;
+            position: absolute;
+            top: 40px;
+            left: 48%;
+            height: 3px;
+            width: 80px;
+        }
     </style>
     <!---Navbar--->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
-        <a class="navbar-brand" href="#"><img class="brand-icon" src="golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
-        <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId" > <!---Responsive collapse button-->
+            <a class="navbar-brand" href="#"><img class="brand-icon" src="golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" >Amazing bridges</a>
-                    <div class="dropdown-menu bg-dark" aria-labelledby="dropdownId">
-                        <a class="dropdown-item text-light bg-dark" href="#">Highest Bridges</a>
-                        <a class="dropdown-item text-light bg-dark" href="#">Tallest bridges</a>
-                        <a class="dropdown-item text-light bg-dark" href="#">Oldest Bridges</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Booking</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Our team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-            </ul>
-          </div>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Amazing bridges</a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="dropdownId">
+                            <a class="dropdown-item text-light bg-dark" href="#">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="#">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="#">Oldest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!---Navbar--->
@@ -284,7 +336,8 @@
 
     <!---Carousel-->
     <section id="Showcase">
-        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000"> <!--Speed handler-->
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+            <!--Speed handler-->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -295,8 +348,7 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block text-right mb-5">
                             <h1 class="display-3">Golden Gate bridge</h1>
-                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos dicta rerum dolor ipsam quos 
-                                doloribus nulla laudantium vero nesciunt quis.</p>
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos dicta rerum dolor ipsam quos doloribus nulla laudantium vero nesciunt quis.</p>
                             <a href="#" class="btn btn-danger btn-lg">Learn more</a>
                         </div>
                     </div>
@@ -305,8 +357,7 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block text-right mb-5">
                             <h1 class="display-3">London bridge</h1>
-                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos dicta rerum dolor ipsam quos 
-                                doloribus nulla laudantium vero nesciunt quis.</p>
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos dicta rerum dolor ipsam quos doloribus nulla laudantium vero nesciunt quis.</p>
                             <a href="#" class="btn btn-primary btn-lg">Learn More</a>
                         </div>
                     </div>
@@ -315,8 +366,7 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block text-right mb-5">
                             <h1 class="display-3">Vascos bridge</h1>
-                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos dicta rerum dolor ipsam quos 
-                                doloribus nulla laudantium vero nesciunt quis.</p>
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos dicta rerum dolor ipsam quos doloribus nulla laudantium vero nesciunt quis.</p>
                             <a href="#" class="btn btn-success btn-lg">Learn More</a>
                         </div>
                     </div>
@@ -331,209 +381,227 @@
         </div>
     </section>
     <!---Carousel-->
-    
-    
+
+
 
 
 
     <!--Achivement-->
     <section id="achievement" class="py-5 text-center">
-      <div class="container">
-        <h2 class="mb-5 position-relative">Our Achivements<div class="underline"></div></h2>
-        <div class="row">
-          <div class="col-md-3 mb-5">
-              <i class="fa fa-line-chart mb-2"></i>      
-            <h3 class="counter">11</h3>
-            <p>Years Establishment</p>
-          </div>
-          <div class="col-md-3 mb-5 ">
-              <i class="fa fa-users mb-2"></i>  
-            <h3 class="counter">34900</h3>
-            <p>Satisfied Customers</p>
-          </div>
-          <div class="col-md-3 mb-5">
-              <i class="fa fa-handshake-o mb-2"></i>
-            <h3 class="counter">52</h3>
-            <p>Bussiness Partners</p>
-          </div>
-          <div class="col-md-3 mb-4">        
-              <i class="fa fa-trophy mb-2"></i>
-            <h3 class="counter">12</h3>
-            <p>Global Awards</p>
-          </div>
+        <div class="container">
+            <h2 class="mb-5 position-relative">Our Achivements
+                <div class="underline"></div>
+            </h2>
+            <div class="row">
+                <div class="col-md-3 mb-5">
+                    <i class="fa fa-line-chart mb-2"></i>
+                    <h3 class="counter">11</h3>
+                    <p>Years Establishment</p>
+                </div>
+                <div class="col-md-3 mb-5 ">
+                    <i class="fa fa-users mb-2"></i>
+                    <h3 class="counter">34900</h3>
+                    <p>Satisfied Customers</p>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <i class="fa fa-handshake-o mb-2"></i>
+                    <h3 class="counter">52</h3>
+                    <p>Bussiness Partners</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <i class="fa fa-trophy mb-2"></i>
+                    <h3 class="counter">12</h3>
+                    <p>Global Awards</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!--Achivement-->
 
 
     <!---Video-play-->
     <section id="video-play">
-      <div class="dark-overlay">
-        <div class="row">
-          <div class="col">
-            <div class="container p-5">
-              <a href="#" class="video text-white" data-video="https://www.youtube.com/embed/FuWM6-xOQCY" data-toggle="modal" data-target="#videoModal">
-                <i class="fa fa-play fa-3x"></i>
-              </a>
-              <h1>Visit the World's Longest Bridges</h1>
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container p-5">
+                        <a href="#" class="video text-white" data-video="https://www.youtube.com/embed/FuWM6-xOQCY" data-toggle="modal" data-target="#videoModal">
+                            <i class="fa fa-play fa-3x"></i>
+                        </a>
+                        <h1>Visit the World's Longest Bridges</h1>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    <div class="modal fade" id="videoModal">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button class="close" data-dismiss="modal">
+        <div class="modal fade" id="videoModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button class="close" data-dismiss="modal">
               <span>&times;</span>
             </button>
-            <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
-          </div>
+                        <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!---Video-play-->
-  <!---Test-->
-  <header class="position-relative">
-    <div class="text-right text-light banner">
-        <h3 class="display-4 banner-heading">Welcome to Amazing Bridge </h3>
-        <p class="lead banner-par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, quos.</p>
-    </div>
-</header>
-<!---Test-->
+    </section>
+    <!---Video-play-->
+    <!---Test-->
+    <header class="position-relative">
+        <div class="text-right text-light banner">
+            <h3 class="display-4 banner-heading">Welcome to Amazing Bridge </h3>
+            <p class="lead banner-par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, quos.</p>
+        </div>
+    </header>
+    <!---Test-->
     <!--Social media line-->
     <footer class="page-footer lighten-5">
         <div style="background-color: #21d192;">
-          <div class="container">
-            <div class="row py-2 d-flex align-items-center">
-              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                <h6 class="mb-0">Get connected with us on social networks!</h6>
-              </div>
-              <div class="col-md-6 col-lg-7 text-center text-md-right">
-                <a href="#" class="mr-4 text-decoration-none">
-                  <i class="fa fa-facebook-f text-white"></i>
-                </a>
-                <a href="#" class="mr-4 text-decoration-none">
-                  <i class="fa fa-twitter text-white"> </i>
-                </a>
-                <a href="#" class="mr-4 text-decoration-none">
-                  <i class="fa fa-google-plus text-white"> </i>
-                </a>
-                <a href="#" class="mr-4 text-decoration-none">
-                  <i class="fa fa-linkedin text-white"> </i>
-                </a>
-                <a href="#" class="mr-4 text-decoration-none">
-                  <i class="fa fa-instagram text-white"> </i>
-                </a>
-              </div>
+            <div class="container">
+                <div class="row py-2 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Get connected with us on social networks!</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <a href="#" class="mr-4 text-decoration-none">
+                            <i class="fa fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="mr-4 text-decoration-none">
+                            <i class="fa fa-twitter text-white"> </i>
+                        </a>
+                        <a href="#" class="mr-4 text-decoration-none">
+                            <i class="fa fa-google-plus text-white"> </i>
+                        </a>
+                        <a href="#" class="mr-4 text-decoration-none">
+                            <i class="fa fa-linkedin text-white"> </i>
+                        </a>
+                        <a href="#" class="mr-4 text-decoration-none">
+                            <i class="fa fa-instagram text-white"> </i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      <!--Social media line-->
+        <!--Social media line-->
 
-    <!--Contact-->
-    <section id="contact" class="bg-dark text-light py-4">
-      <div class="container">
-          <h2 class="text-center mb-5 position-relative">Contact Us<div class="underline"></div></h2>       
-        <div class="row">      
-          <div class="col-lg-6">
-            <form class="contact-form">
-              <div class="form-group py-4">
-                <input type="text" class="form-control my-2 p-2 input" placeholder="Name">
-                <label for="name" class="label">Name</label>
-              </div>
-              <div class="form-group py-4">
-                <input type="email" class="form-control my-2 p-2 input" placeholder="Email Address">
-                <label for="email" class="label">Email Address</label>
-              </div>
-              <div class="form-group py-4 mb-5">
-                <textarea cols="75" rows="3" placeholder="Comment" maxlength="120" class="form-control textarea"></textarea>
-                <label for="comment" class="label-textarea">Comment</label>
-              </div>
-              <p class="dot mb-3">.</p>
-              <div class="d-flex">
-                <button type="submit" class="ml-auto btn btn-lg py-2 mb-3 submit-button">Submit</button>
-              </div>                    
-            </form>
-          </div>
-          <div class="col-lg-6 ">
-              <div class="card">
-                  <div class="card-body p-1">
-                    <iframe height="345" width="100%" id="gmap_canvas" 
-                    src="https://maps.google.com/maps?q=590%20c%C3%A1ch%20m%E1%BA%A1ng%20th%C3%A1ng%20t%C3%A1m%20&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/nordvpn-coupon/"></a>
-                    <style>.mapouter{position:relative;text-align:right;height:360px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:360px;width:600px;}</style>
-                  </div>
-              </div>   
+        <!--Contact-->
+        <section id="contact" class="bg-dark text-light py-4">
+            <div class="container">
+                <h2 class="text-center mb-5 position-relative">Contact Us
+                    <div class="underline"></div>
+                </h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form class="contact-form">
+                            <div class="form-group py-4">
+                                <input type="text" class="form-control my-2 p-2 input" placeholder="Name">
+                                <label for="name" class="label">Name</label>
+                            </div>
+                            <div class="form-group py-4">
+                                <input type="email" class="form-control my-2 p-2 input" placeholder="Email Address">
+                                <label for="email" class="label">Email Address</label>
+                            </div>
+                            <div class="form-group py-4 mb-5">
+                                <textarea cols="75" rows="3" placeholder="Comment" maxlength="120" class="form-control textarea"></textarea>
+                                <label for="comment" class="label-textarea">Comment</label>
+                            </div>
+                            <p class="dot mb-3">.</p>
+                            <div class="d-flex">
+                                <button type="submit" class="ml-auto btn btn-lg py-2 mb-3 submit-button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="card">
+                            <div class="card-body p-1">
+                                <iframe height="345" width="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=590%20c%C3%A1ch%20m%E1%BA%A1ng%20th%C3%A1ng%20t%C3%A1m%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a
+                                    href="https://www.whatismyip-address.com/nordvpn-coupon/"></a>
+                                    <style>
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: 360px;
+                                            width: 600px;
+                                        }
+                                        
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none!important;
+                                            height: 360px;
+                                            width: 600px;
+                                        }
+                                    </style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--Contact-->
+
+        <!-- Copyright -->
+        <div class="footer-copyright bg-dark text-center text-white-50 py-3">© 2020 Copyright:
+            <a class="dark-grey-text" href="#"> FPT-Aptech.com</a>
         </div>
-      </div>
+        <!-- Copyright -->
+    </footer>
+
+    <section id="booking">
+        <div class="text-center">
+            <a href="#" data-toggle="modal" data-target="#signupModal"><i class="fa fa-plane fa-3x"></i><h5>Book Now</h5></a>
+        </div>
     </section>
-    
-    <!--Contact-->
-
-    <!-- Copyright -->
-    <div class="footer-copyright bg-dark text-center text-white-50 py-3">© 2020 Copyright:
-      <a class="dark-grey-text" href="#"> FPT-Aptech.com</a>
-    </div>
-    <!-- Copyright -->
-   </footer>
-   
-   <section id="booking">
-    <div class="text-center">
-      <a href="#" data-toggle="modal" data-target="#signupModal"><i class="fa fa-plane fa-3x"></i><h5>Book Now</h5></a>
-    </div>
-  </section>
 
 
     <!---Booking Modal-->
     <div id="signupModal" class="modal fade text-dark text-center">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Booking Form</h5>
-            <button class="close" data-dismiss="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Booking Form</h5>
+                    <button class="close" data-dismiss="modal">
               <span>&times;</span>
             </button>
-          </div>
-          <div class="modal-body px-5">
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control pl-3" name="name" placeholder="Name">
                 </div>
-                <div class="form-group">
-                  <input type="email" class="form-control pl-3" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <select name="location" class="form-control" id="">
+                <div class="modal-body px-5">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control pl-3" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control pl-3" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <select name="location" class="form-control" id="">
                     <option disabled selected value="">Your loccation</option>
                     <option value="">USA</option>
                     <option value="">London</option>
                     <option value="">China</option>
                     <option value="">Italia</option>
                   </select>
-                </div>
-                <div class="form-group">
-                  <input placeholder="Arrival date" class="textbox-n form-control pl-3" type="text" onfocus="(this.type='date')" id="date">
-                </div>
-                <div class="form-group">
-                  <input type="number" class="form-control pl-3" placeholder="Ticket">
-                </div>
-                <div class="form-group">
-                  <select name="traffic" class="form-control" id="traffic">
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Arrival date" class="textbox-n form-control pl-3" type="text" onfocus="(this.type='date')" id="date">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control pl-3" placeholder="Ticket">
+                        </div>
+                        <div class="form-group">
+                            <select name="traffic" class="form-control" id="traffic">
                     <option disabled selected value="">Your traffic type</option>
                     <option value="">Airplane</option>
                     <option value="">Bus</option>
                   </select>
+                        </div>
+                    </form>
                 </div>
-              </form>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-primary btn-block">Book Now</button>
-          </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-block">Book Now</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!---Booking Modal-->
 
@@ -542,32 +610,33 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" 
-    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" 
-    crossorigin="anonymous"></script><!--Counter-up-plugin-->
-    <script src="jquery.counterup.js"></script><!--Counter-up-plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+    <!--Counter-up-plugin-->
+    <script src="jquery.counterup.js"></script>
+    <!--Counter-up-plugin-->
     <script>
-      $(document).ready(function() {
-          $('.counter').counterUp({
-              delay: 10,
-              time: 2000
-              
-          });
-      });
-      $(function () {
-      // Auto play modal video
-      $(".video").click(function () {
-        var theModal = $(this).data("target"),
-          videoSRC = $(this).attr("data-video"),
-          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
-        $(theModal + ' iframe').attr('src', videoSRCauto);
-        $(theModal + ' button.close').click(function () {
-          $(theModal + ' iframe').attr('src', videoSRC);
-        });
-      });
-    });
+        $(document).ready(function() {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 2000
 
-    
+            });
+        });
+        $(function() {
+            // Auto play modal video
+            $(".video").click(function() {
+                var theModal = $(this).data("target"),
+                    videoSRC = $(this).attr("data-video"),
+                    videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+                $(theModal + ' iframe').attr('src', videoSRCauto);
+                $(theModal + ' button.close').click(function() {
+                    $(theModal + ' iframe').attr('src', videoSRC);
+                });
+            });
+        });
+
+        //test
     </script>
 </body>
+
 </html>
