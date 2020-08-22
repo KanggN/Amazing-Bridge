@@ -16,25 +16,87 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="assets/js/information.js"></script>
     <script src="assets/js/valadationFeedback.js"></script>
+    <style>
+        div #link {
+            margin-left: 5px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        
+        div #link1 {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        
+        div #link2 {
+            color: black;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        
+        #link4 li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline;
+        }
+    </style>
 
 </head>
 
 <body class="is-preload-0 is-preload-1 is-preload-2">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+         <span class="navbar-toggler-icon"></span>
+     </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest03.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Main -->
     <div id="main">
+
         <!-- Header -->
         <header id="header">
             <h1>Highest Bridges</h1>
-            <p>Top 4 Highest Bridges in the World <a href="tallest03.html">Amazing Bridges</a></p>
-            <a href="tallest03.html">Amazing Bridges</a>
-            <a href="tallest03.html">Amazing Bridges</a>
-            <a href="tallest03.html">Amazing Bridges</a>
-            <a href="tallest03.html">Amazing Bridges</a>
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            <p>Top 4 Highest Bridges in the World <a href="index.html">Home Page</a></p>
+            <ul id="link4">
+                <li><a id="link" href="Highest.html">Highest Bridges</a></li>
+                <li><a id="link" href="tallest03.html">Tallest Bridges</a></li>
+                <li><a id="link1" href="oldest.html">Oldest Bridges</a></li>
+                <li><a id="link1" href="longest.html">Longest Bridges</a></li>
             </ul>
         </header>
         <!-- Thumbnail -->
@@ -174,8 +236,8 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="copyright">
-                <li>&copy; Untitled.</li>
-                <li>Design: <a href="http://html5up.net">Aptech</a>.</li>
+                <li>&copy; 2020 Copyright: </li>
+                <li>Design by Aptech.</li>
             </ul>
         </footer>
     </div>

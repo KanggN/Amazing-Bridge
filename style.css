@@ -81,25 +81,27 @@ ul {
 }
 
 
+/*Contact*/
 
- /*Contact*/
- #contact {
+#contact {
     position: relative;
     background: url(images/background/contact-us.jpg);
     min-height: 550px;
     background-size: cover;
     background-position: 30% 45%;
 }
-#contact .dark-overlay{
+
+#contact .dark-overlay {
     position: absolute;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    
 }
-#contact .input,#contact .textarea{
+
+#contact .input,
+#contact .textarea {
     background-color: transparent;
     border-color: transparent;
     border-bottom: 2px solid #ccc;
@@ -108,25 +110,32 @@ ul {
     resize: none;
     color: #fff;
 }
-#contact .input:focus,#contact .textarea:focus{
+
+#contact .input:focus,
+#contact .textarea:focus {
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
     color: #fff;
     border-bottom: 2px solid #3292a6;
 }
-#contact .submit-button{
-    background-color: #3292a6;;
+
+#contact .submit-button {
+    background-color: #3292a6;
+    ;
     color: #eee;
     padding: 0 80px;
     font-size: 18px;
     transition: all .3s;
 }
-#contact .submit-button:hover{
-    background-color: rgba(50, 146, 166);;
+
+#contact .submit-button:hover {
+    background-color: rgba(50, 146, 166);
+    ;
     transform: translateY(-1.5px);
 }
-#contact .label{
+
+#contact .label {
     color: #777;
     display: block;
     margin-top: -70px;
@@ -134,7 +143,8 @@ ul {
     font-size: 13px;
     transition: all .3s;
 }
-#contact .label-textarea{
+
+#contact .label-textarea {
     color: #777;
     display: block;
     margin-top: -110px;
@@ -142,40 +152,49 @@ ul {
     font-size: 13px;
     transition: all .5s;
 }
-#contact .input:placeholder-shown + .label{
-    transform: translate(20px,20px);
+
+#contact .input:placeholder-shown+.label {
+    transform: translate(20px, 20px);
     opacity: 0;
     visibility: hidden;
 }
-#contact .textarea:placeholder-shown + .label-textarea{
-    transform: translate(20px,30px);
+
+#contact .textarea:placeholder-shown+.label-textarea {
+    transform: translate(20px, 30px);
     opacity: 0;
     visibility: hidden;
 }
-#contact .dot{
+
+#contact .dot {
     visibility: hidden;
 }
+
+
 /*Contact*/
 
 
 /*Our team*/
+
 #team {
     background: url(images/background/team.jpg);
     background-size: cover;
     position: relative;
     min-height: 550px;
 }
-#team .dark-overlay{
+
+#team .dark-overlay {
     position: absolute;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #007b5e;
 }
+
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: #108d6f;
@@ -183,9 +202,6 @@ ul {
     box-shadow: none;
     outline: none;
 }
-
-
-
 
 #team .card {
     border: none;
@@ -268,6 +284,7 @@ ul {
 .backside .card {
     min-height: 310px;
 }
+
 .frontside .card .card-title,
 .backside .card .card-title {
     color: #007b5e !important;
@@ -283,17 +300,30 @@ ul {
     color: turquoise;
     cursor: pointer;
 }
+
+
 /*Our team*/
+
+
 /*Modal*/
-#signupModal .modal-content{
-    background: url(airplane.png);
+
+#signupModal .modal-content {
+    background: url(images/background/airplane.png);
     background-size: cover;
     background-position: -100px 0px;
 }
+
+
 /*Reponsive for team*/
+
 @media only screen and (max-width: 767px) {
-    #team {height: 1550px;}
-    } 
-@media only screen and (min-width: 768px) and (max-width: 992px){
-    #team {height: 850px;}
-} 
+    #team {
+        height: 1550px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #team {
+        height: 850px;
+    }
+}
