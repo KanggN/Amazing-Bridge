@@ -191,12 +191,12 @@ ul {
     height: 100%;
 }
 
-.btn-primary {
+#team .btn-primary {
     background-color: #007b5e;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+#team .btn-primary:hover,
+#team .btn-primary:focus {
     background-color: #108d6f;
     border-color: #108d6f;
     box-shadow: none;
@@ -307,10 +307,10 @@ ul {
 
 /*Modal*/
 
-#signupModal .modal-content {
-    background: url(images/background/airplane.png);
+#booking {
+    background: url(images/background/airplane.png) no-repeat center center;
     background-size: cover;
-    background-position: -100px 0px;
+    min-height: 550px;
 }
 
 
