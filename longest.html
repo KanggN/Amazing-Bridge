@@ -5,6 +5,13 @@
     <title>Longest Bridges</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <!--Logo font-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -20,6 +27,41 @@
 </head>
 
 <body class="is-preload-0 is-preload-1 is-preload-2">
+    <!---Navbar--->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest03.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---Navbar--->
     <!-- Main -->
     <div id="main">
         <!-- Header -->
@@ -39,7 +81,7 @@
         <section id="thumbnails">
             <article>
                 <a class="thumbnail" href="images/longest/full/longest.jpg" data-position="left center">
-                    <h1 class="text">1</h1><img id="thumbnail1" src="images/longest/full/longest.jpg" alt="Danyang-Kunshan" height="112px"></a>
+                    <h1 class="text">1</h1><img id="thumbnail1" src="images/longest/thumb/longest.jpg" alt="Danyang-Kunshan" height="112px"></a>
                 <h2 class="title-top">Top 1. The Danyang–Kunshan Grand Bridge (China<img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
                 <p class="less-cont">Structural length: 164.8 kilometres (102.4 mi)</p>
                 <button id="btn1">Information</button>
@@ -64,7 +106,7 @@
                 <button id="btn3">Comment</button>
                 <div id="feed">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="5" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -74,7 +116,7 @@
                 <a class="thumbnail" href="images/longest/full/top2longest01.jpg" data-position="left center">
                     <h1 class="text">2</h1><img id="thumbnail2" src="images/longest/thumb/top2longest01.jpg" alt="Jakarta–Cikampek Elevated Toll Road" height="112px"></a>
                 <h2 class="title-top">Top 2. The Jakarta–Cikampek Elevated Toll Road ( Indonesia <img src="images/flag/278px-Flag_of_Indonesia.svg.png" alt="Indo" width="3%"> )</h2>
-                <p class="less-cont">Structural lenght: 36.4-kilometre-long (22.6 mi)</p>
+                <p class="less-cont">Structural length: 36.4-kilometre-long (22.6 mi)</p>
                 <button id="btn4">Information</button>
                 <div id="info2">
                     <ul class="detail-info">
@@ -91,10 +133,10 @@
                         <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Jakarta%E2%80%93Cikampek%20Elevated%20Toll%20Road&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
                     </div>
                 </div>
-                <button id="btn6">Feedback</button>
+                <button id="btn6">Comment</button>
                 <div id="feed2">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="5" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -122,10 +164,10 @@
                         </div>
                     </div>
                 </div>
-                <button id="btn9">Feedback</button>
+                <button id="btn9">Comment</button>
                 <div id="feed3">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="5" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -157,10 +199,10 @@
                         </div>
                     </div>
                 </div>
-                <button id="btn12">Feedback</button>
+                <button id="btn12">Comment</button>
                 <div id="feed4">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="5" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -171,8 +213,8 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="copyright">
-                <li>&copy; Untitled.</li>
-                <li>Design: <a href="http://html5up.net">Aptech</a>.</li>
+                <li>&copy; 2020 Copyright: </li>
+                <li>Design by Aptech.</li>
             </ul>
         </footer>
     </div>
