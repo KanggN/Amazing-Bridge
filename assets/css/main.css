@@ -683,6 +683,7 @@ select {
 
 textarea {
     padding: 0.75em 1em;
+    width: 500px;
 }
 
 input[type="checkbox"],
@@ -1027,6 +1028,7 @@ ul.icons li .icon:before {
     transition: opacity 0.75s ease, right 0.75s ease, left 0.75s ease, visibility 0.75s;
     -webkit-overflow-scrolling: touch;
     position: fixed;
+    margin-top: 56px;
     top: 0;
     width: 22.5em;
     height: 100%;
@@ -1320,6 +1322,7 @@ body.is-preload-1 #main {
 #viewer .inner .toggle {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     position: absolute;
+    margin-top: 35px;
     top: 0;
     width: 4em;
     height: 4em;
@@ -1453,6 +1456,7 @@ body.fullscreen #viewer {
 }
 
 body.fullscreen #viewer .inner .toggle {
+    margin-top: 35px;
     background-image: url("images/window-restore.png");
 }
 

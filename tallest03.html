@@ -5,6 +5,13 @@
     <title>Tallest Bridges</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <!--Logo font-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -20,12 +27,49 @@
 </head>
 
 <body class="is-preload-0 is-preload-1 is-preload-2">
+    <!---Navbar--->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest03.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---Navbar--->
     <!-- Main -->
     <div id="main">
+
         <!-- Header -->
         <header id="header">
             <h1>Tallest Bridges</h1>
-            <p>Top 4 Tallest Bridges in the World <a href="http://html5up.net">Amazing Bridges</a></p>
+            <p>Top 4 Tallest Bridges in the World <a href="index.html">Amazing Bridges</a></p>
+
             <ul class="icons">
                 <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -61,7 +105,7 @@
                 <button id="btn3">Comment</button>
                 <div id="feed">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="5" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -89,10 +133,10 @@
 
                     </div>
                 </div>
-                <button id="btn6">Feedback</button>
+                <button id="btn6">Comment</button>
                 <div id="feed2">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="5" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -119,10 +163,10 @@
                         </div>
                     </div>
                 </div>
-                <button id="btn9">Feedback</button>
+                <button id="btn9">Comment</button>
                 <div id="feed3">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="5" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -153,10 +197,10 @@
 
                     </div>
                 </div>
-                <button id="btn12">Feedback</button>
+                <button id="btn12">Comment</button>
                 <div id="feed4">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="5" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -167,8 +211,8 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="copyright">
-                <li>&copy; Untitled.</li>
-                <li>Design: <a href="http://html5up.net">Aptech</a>.</li>
+                <li>&copy; 2020 Copyright: </li>
+                <li>Design by Aptech.</li>
             </ul>
         </footer>
     </div>
