@@ -6,6 +6,7 @@
 body {
     background-color: #333;
     color: #fff;
+    height: 100%;
 }
 
 ul {
@@ -83,12 +84,13 @@ ul {
 
 /*Contact*/
 
-#contact {
+.content-contact {
     position: relative;
     background: url(images/background/contact-us.jpg);
-    min-height: 550px;
+    min-height: 690px;
     background-size: cover;
     background-position: 30% 45%;
+    height: 100%;
 }
 
 #contact .dark-overlay {
@@ -175,11 +177,11 @@ ul {
 
 /*Our team*/
 
-#team {
+.content-team {
     background: url(images/background/team.jpg);
     background-size: cover;
     position: relative;
-    min-height: 550px;
+    min-height: 690px;
 }
 
 #team .dark-overlay {

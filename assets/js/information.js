@@ -36,6 +36,55 @@ btn3.addEventListener('click', () => {
             feback.style.display = 'none';
         }
     })
+    //-----click thumnail
+var thumnail1 = document.querySelector('#thumbnail1');
+var thumnail2 = document.querySelector('#thumbnail2');
+var thumnail3 = document.querySelector('#thumbnail3');
+var thumnail4 = document.querySelector('#thumbnail4');
+thumnail1.addEventListener('click', () => {
+    sitemp2.style.display = 'none';
+    feback2.style.display = 'none';
+    info2.style.display = 'none';
+    sitemp3.style.display = 'none';
+    feback3.style.display = 'none';
+    info3.style.display = 'none';
+    info4.style.display = 'none';
+    sitemp4.style.display = 'none';
+    feback4.style.display = 'none';
+})
+thumnail2.addEventListener('click', () => {
+    info.style.display = 'none';
+    feback.style.display = 'none';
+    feback.style.display = 'none';
+    sitemp3.style.display = 'none';
+    feback3.style.display = 'none';
+    info3.style.display = 'none';
+    info4.style.display = 'none';
+    sitemp4.style.display = 'none';
+    feback4.style.display = 'none';
+})
+thumnail3.addEventListener('click', () => {
+    info.style.display = 'none';
+    feback.style.display = 'none';
+    feback.style.display = 'none';
+    sitemp2.style.display = 'none';
+    feback2.style.display = 'none';
+    info2.style.display = 'none';
+    info4.style.display = 'none';
+    sitemp4.style.display = 'none';
+    feback4.style.display = 'none';
+})
+thumnail4.addEventListener('click', () => {
+        info.style.display = 'none';
+        feback.style.display = 'none';
+        feback.style.display = 'none';
+        sitemp2.style.display = 'none';
+        feback2.style.display = 'none';
+        info2.style.display = 'none';
+        info3.style.display = 'none';
+        sitemp3.style.display = 'none';
+        feback3.style.display = 'none';
+    })
     //------info2-------
 var btn4 = document.querySelector('#btn4');
 var btn5 = document.querySelector('#btn5');

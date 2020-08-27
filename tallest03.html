@@ -5,27 +5,62 @@
     <title>Tallest Bridges</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="assets/js/sweetalert.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main2.css" />
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <script src="assets/js/information.js"></script>
     <script src="assets/js/valadationFeedback.js"></script>
-
 </head>
 
-<body class="is-preload-0 is-preload-1 is-preload-2">
+<body>
+    <!---Navbar--->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
+            <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest03.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="outteam.html">Our team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Main -->
-    <div id="main">
+    <div id="main" class="is-preload-0 is-preload-1 is-preload-2">
         <!-- Header -->
         <header id="header">
             <h1>Tallest Bridges</h1>
-            <p>Top 4 Tallest Bridges in the World <a href="http://html5up.net">Amazing Bridges</a></p>
+            <p>Top 4 Tallest Bridges in the World</p>
             <ul class="icons">
                 <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -38,7 +73,7 @@
             <article>
                 <a class="thumbnail" href="images/tallest/Full/tallest.jpg" data-position="left center">
                     <h1 class="text">1</h1><img src="images/tallest/Full/tallest.jpg" alt="Millau Viaduct" height="112px"></a>
-                <h2 class="title-top">Top 1. The Millau Viaduct - Millau ( France <img src="images/flag/France.svg" alt="France" width="3%"> )</h2>
+                <h2 class="title-top">Top 1. The Millau Viaduct ( France <img src="images/flag/France.svg" alt="France" width="3%"> )</h2>
                 <p class="less-cont">Structural height: 336.4 metres (1,104 ft).</p>
                 <button id="btn1">Information</button>
                 <div id="info">
@@ -58,7 +93,7 @@
 
                     </div>
                 </div>
-                <button id="btn3">Comment</button>
+                <button id="btn3">Feedback</button>
                 <div id="feed">
                     <form method="post" action="" onsubmit="return validateFeedback()">
                         <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
@@ -69,7 +104,7 @@
             <article>
                 <a class="thumbnail" href="images/tallest/Full/top2tall02.jpeg" data-position="left center">
                     <h1 class="text">2</h1><img src="images/tallest/Thumb/top2tall02.jpeg" alt="PingtangBridge" height="112px"></a>
-                <h2 class="title-top">Top 2. The Pingtang Bridge - Pingtang, Guizhou ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <h2 class="title-top">Top 2. The Pingtang Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
                 <p class="less-cont">Structural height: 332 metres (1,089 ft).</p>
                 <button id="btn4">Information</button>
                 <div id="info2">
@@ -100,7 +135,7 @@
             <article>
                 <a class="thumbnail" href="images/tallest/Full/top3tall01.jpg" data-position="left center">
                     <h1 class="text">3</h1><img src="images/tallest/Thumb/top3tall01.jpg" alt="HutongYangtzeRiverBridge" height="112px"></a>
-                <h2 class="title-top">Top 3. The Hutong Yangtze River Bridge - Jiangsu ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <h2 class="title-top">Top 3. The Hutong Yangtze River Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
                 <p class="less-cont">Structural height: 325 metres (1,066 ft).</p>
                 <button id="btn7">Information</button>
                 <div id="info3">
@@ -130,7 +165,7 @@
             <article>
                 <a class="thumbnail" href="images/tallest/Full/top4tall02.jpg" data-position="left center">
                     <h1 class="text">4</h1><img src="images/tallest/Thumb/top4tall02.jpg" alt="YavuzSultanSelimBridge" height="112px"></a>
-                <h2 class="title-top">Top 4. The Yavuz Sultan Selim Bridge - Istalbul ( Turkey <img src="images/flag/Turkey.svg" alt="turkey" width="3%"> )</h2>
+                <h2 class="title-top">Top 4. The Yavuz Sultan Selim Bridge ( Turkey <img src="images/flag/Turkey.svg" alt="turkey" width="3%"> )</h2>
                 <p class="less-cont">Structural height: 322 metres (1,056 ft).</p>
                 <button id="btn10">Information</button>
                 <div id="info4">
@@ -164,22 +199,104 @@
 
 
         </section>
+        <!---Booking Modal-->
+        <div id="signupModal" class="modal fade text-dark text-center">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-light">Booking Form</h5>
+                        <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+                    </div>
+                    <div class="modal-body px-5">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control pl-3" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control pl-3" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control pl-3" placeholder="Telephone Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="location" class="form-control">
+                                        <option disabled selected value="">Your loccation</option>
+                                        <option value="">China</option>
+                                        <option value="">France</option>
+                                        <option value="">Indonesia</option>
+                                        <option value="">Italia</option>
+                                        <option value="">Spain</option>
+                                        <option value="">Turkey</option>
+                                        <option value="">USA</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <select name="traffic" class="form-control">
+                                        <option disabled selected value="">Your traffic type</option>
+                                        <option value="">Airplane</option>
+                                        <option value="">Bus</option>
+                                    </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input style="cursor: context-menu" id="departure" placeholder="Departure Date" class="date-picker form-control pl-3" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input style="cursor: context-menu" id="arrival" placeholder="Arrival Date" class="date-picker form-control pl-3" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control pl-3" placeholder="Ticket">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary mx-auto">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---Booking Modal-->
+        <script>
+            $(".date-picker").focus(function() {
+                $(this).attr('type', 'date');
+            });
+            $(".close").click(function() {
+                $('.date-picker').val("");
+                $('#departure').attr({
+                    type: "text",
+                    placeholder: "Departure Date"
+                });
+                $('#arrival').attr({
+                    type: "text",
+                    placeholder: "Arrival Date"
+                });
+            });
+        </script>
         <!-- Footer -->
         <footer id="footer">
             <ul class="copyright">
                 <li>&copy; Untitled.</li>
-                <li>Design: <a href="http://html5up.net">Aptech</a>.</li>
+                <li>Design by Aptech. </li>
             </ul>
         </footer>
     </div>
     <!-- Scripts -->
     <script src="assets/js/information.js"></script>
     <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

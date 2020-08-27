@@ -147,6 +147,9 @@ var main = (function($) {
             _.$thumbnails = $('#thumbnails');
 
             // Viewer.
+            _.$nav = $(
+                '<p id="nav1"></p>'
+            ).appendTo(_.$body);
             _.$viewer = $(
                 '<div id="viewer">' +
                 '<div class="inner">' +
@@ -156,6 +159,7 @@ var main = (function($) {
                 '</div>' +
                 '</div>'
             ).appendTo(_.$body);
+
 
             // Nav.
             _.$navNext = _.$viewer.find('.nav-next');

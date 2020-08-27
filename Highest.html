@@ -1,73 +1,46 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <title>Highest Bridges</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="assets/js/sweetalert.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main2.css" />
+    <link rel="stylesheet" href="assets/css/style1.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <script src="assets/js/information.js"></script>
     <script src="assets/js/valadationFeedback.js"></script>
-    <style>
-        div #link {
-            margin-left: 5px;
-            margin-left: 10px;
-            text-decoration: none;
-            color: black;
-            font-style: italic;
-            font-weight: bolder;
-        }
-        
-        div #link1 {
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-            font-style: italic;
-            font-weight: bolder;
-        }
-        
-        div #link2 {
-            color: black;
-            font-style: italic;
-            font-weight: bolder;
-        }
-        
-        #link4 li {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: inline;
-        }
-    </style>
 
 </head>
 
-<body class="is-preload-0 is-preload-1 is-preload-2">
-    <!-- Navbar -->
+<body>
+    <!---Navbar--->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img class="brand-icon" src="images/golden-gate-bridge-icon.png" alt="">Amazing bridge</a>
             <button class="navbar-toggler d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"> <!---Responsive collapse button-->
-         <span class="navbar-toggler-icon"></span>
-     </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">Galleries</a>
                         <div class="dropdown-menu bg-dark">
                             <a class="dropdown-item text-light bg-dark" href="Highest.html">Highest Bridges</a>
-                            <a class="dropdown-item text-light bg-dark" href="tallest03.html">Tallest bridges</a>
+                            <a class="dropdown-item text-light bg-dark" href="tallest.html">Tallest bridges</a>
                             <a class="dropdown-item text-light bg-dark" href="oldest.html">Oldest Bridges</a>
                             <a class="dropdown-item text-light bg-dark" href="longest.html">Longest Bridges</a>
                         </div>
@@ -76,59 +49,64 @@
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Our team</a>
+                        <a class="nav-link" href="ourteam.html">Our team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!---Navbar--->
+
     <!-- Main -->
-    <div id="main">
+
+    <div id="main" class="is-preload-0 is-preload-1 is-preload-2">
 
         <!-- Header -->
         <header id="header">
             <h1>Highest Bridges</h1>
-            <p>Top 4 Highest Bridges in the World <a href="index.html">Home Page</a></p>
-            <ul id="link4">
-                <li><a id="link" href="Highest.html">Highest Bridges</a></li>
-                <li><a id="link" href="tallest03.html">Tallest Bridges</a></li>
-                <li><a id="link1" href="oldest.html">Oldest Bridges</a></li>
-                <li><a id="link1" href="longest.html">Longest Bridges</a></li>
+            <p>Top 4 Highest Bridges in the World</p>
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
             </ul>
+
         </header>
         <!-- Thumbnail -->
         <!-- Top 1 -->
         <section id="thumbnails">
             <article>
                 <a class="thumbnail" href="images/highest/Full/highest.jpg" data-position="left center">
-                    <h1 class="text">1</h1><img id="thumbnail1" src="images/highest/Full/highest.jpg" alt="Millau Viaduct" height="112px"></a>
-                <h2 class="title-top">Top 1. The Duge Bridge - Millau ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                    <h1 class="text">1</h1><img id="thumbnail1" src="images/highest/Full/highest.jpg" alt="Duge Bridge" height="112px"></a>
+                <h2 class="title-top">Top 1. The Duge Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
                 <p class="less-cont">Deck height: 565 m (1,854 ft).</p>
                 <button id="btn1">Information</button>
                 <div id="info">
                     <ul class="detail-info">
-                        <li> The Millau Viaduct (French: Viaduc de Millau) is a multi-span cable-stayed bridge completed in 2004 across the gorge valley of the Tarn near Millau in Southern France. In an Anglo-French partnership, it was designed by the French
-                            structural engineer Michel Virlogeux and English architect Norman Foster.</li><br>
-                        <li>As of July 2020, it is the tallest bridge in the world, having a structural height of 336.4 metres (1,104 ft).</li><br>
-                        <li>The cost of construction was approximately € 394 million ($ 424 million).</li><br>
-                        <li>It was built over three years, formally inaugurated on 14 December 2004 and opened to traffic two days later on 16 December.</li><br>
-                        <li>The bridge has been consistently ranked as one of the greatest engineering achievements of all time, and received the 2006 Outstanding Structure Award from the International Association for Bridge and Structural Engineering.</li>
+                        <li>The Duge Bridge is a cable-stayed bridge on the border between the provinces of Guizhou and Yunnan.</li><br>
+                        <li>As of 2016, the bridge is the highest in the world with the road deck sitting over 565 metres (1,850 feet) above the Beipan River.</li><br>
+                        <li>The bridge cost 1.023 billion yuan (about US$140 million) to construct.</li><br>
+                        <li>Construction of the bridge began in 2011. The bridge was completed on 10 September 2016. It was inaugurated on 29 December 2016.</li><br>
                     </ul>
                 </div>
                 <button id="btn2">Site Map</button>
                 <div id="sitemap">
                     <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=millau%20viaduct&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=26.3866%C2%B0N%20104.6755%C2%B0E&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+                        </div>
 
                     </div>
                 </div>
-                <button id="btn3">Comment</button>
+                <button id="btn3">Feedback</button>
                 <div id="feed">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="8" cols="3" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -136,31 +114,29 @@
             <!-- Top 2 -->
             <article>
                 <a class="thumbnail" href="images/highest/Full/top2hig01.jpg" data-position="left center">
-                    <h1 class="text">2</h1><img id="thumbnail2" src="images/highest/Thumb/top2height01.jpg" alt="PingtangBridge" height="112px"></a>
-                <h2 class="title-top">Top 2. The Pingtang Bridge - Pingtang, Guizhou ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
-                <p class="less-cont">Structural height: 332 metres (1,089 ft).</p>
+                    <h1 class="text">2</h1><img id="thumbnail2" src="images/highest/Thumb/top2height01.jpg" alt="Sidu River Bridge" height="112px"></a>
+                <h2 class="title-top">Top 2. The Sidu River Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Deck height: 496 m (1,627 ft).</p>
                 <button id="btn4">Information</button>
                 <div id="info2">
                     <ul class="detail-info">
-                        <li>The Pingtang Bridge is a bridge in Pingtang, Guizhou, China and carries the Pingtang Luodian Expressway over the deep Caodu River valley.</li><br>
-                        <li>The bridge is a multi-span cable-stayed bridge with a length of 7,000 ft (2,100 m). With a main tower that has a height of 332 metres (1,089 ft).</li><br>
-                        <li>The bridge cost 1.5 billion yuan (about 215 million U.S. dollars) to build.</li><br>
-                        <li>It was opened to traffic on 30 December 2019.</li><br>
-                        <li>The bridge is the second tallest in world. The tallest tower is 15 metres (49 ft) shorter than France's Millau Viaduct, which has a similar structure to the Pingtang Bridge.</li>
+                        <li>The Sidu River Bridge is a 1,222 m-long (4,009 ft) suspension bridge crossing the valley of the Sidu River near Yesanguan in Badong County of the Hubei Province .</li><br>
+                        <li>The bridge spans a 500-meter-deep (1,600 ft) valley of the Sidu River, as the highest bridge in the world until it in turn was surpassed by the Duge Bridge in 2016.</li><br>
+                        <li>The bridge cost 720 million yuan (approximately US$100 million) to build.</li><br>
+                        <li>It opened to traffic on November 15, 2009.</li><br>
                     </ul>
                 </div>
                 <button id="btn5">Site Map</button>
                 <div id="sitemap2">
                     <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=25%C2%B0%2047%E2%80%B2%209.6%E2%80%B3%20N%2C%20107%C2%B0%203%E2%80%B2%2021.6%E2%80%B3%20E&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                                scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=sidu%20river%20bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
 
                     </div>
                 </div>
                 <button id="btn6">Feedback</button>
                 <div id="feed2">
                     <form method="post" action="" onsubmit="return validateFeedback()">
-                        <textarea class="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                        <textarea class="comment" rows="8" cols="3" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
                         <button class="button-enter" value="submit">Enter</button>
                     </form>
                 </div>
@@ -168,24 +144,25 @@
             <!-- Top 3 -->
             <article>
                 <a class="thumbnail" href="images/highest/Full/top3hig01.jpg" data-position="left center">
-                    <h1 class="text">3</h1><img id="thumbnail3" src="images/highest/Thumb/top3height01.jpg" alt="HutongYangtzeRiverBridge" height="112px"></a>
-                <h2 class="title-top">Top 3. The Hutong Yangtze River Bridge - Jiangsu ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
-                <p class="less-cont">Structural height: 325 metres (1,066 ft).</p>
+                    <h1 class="text">3</h1><img id="thumbnail3" src="images/highest/Thumb/top3height01.jpg" alt="Puli Bridge" height="112px"></a>
+                <h2 class="title-top">Top 3. The Puli Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Deck height: 485 m (1,591 ft).</p>
                 <button id="btn7">Information</button>
                 <div id="info3">
                     <ul class="detail-info">
-                        <li>The Hutong Yangtze River Bridge is a combined rail and road bridge which crosses the Yangtze River in Jiangsu, China.</li><br>
-                        <li>The main span is 1,092 metres (3,583 ft) long and is supported by two 330 metres (1,080 ft) tall towers. It is the eastern-most railway crossing of the Yangtze river.</li><br>
-                        <li>The ambitious traffic link, which costs 15 billion yuan (£1.7 billion) to build.</li><br>
-                        <li>Construction began on 1 March 2014. The Nantong–Shanghai railway, opened on 1 July 2020, uses this bridge.</li><br>
-                        <li>It is the third-tallest bridge in the world.</li>
+                        <li>Puli Bridge is a suspension bridge near Xuanwei, Qujing, China.</li><br>
+                        <li>The bridge, at 485 m (1,591 ft), is the third-highest bridge in the world.</li><br>
+                        <li>The bridge cost 440 million yuan (about US$71 million) to build.</li><br>
+                        <li>The bridge forms part of the G56 Hangzhou–Ruili Expressway between Liupanshui and Xuanwei and was opened in August 2015.</li><br>
                     </ul>
                 </div>
                 <button id="btn8">Site Map</button>
                 <div id="sitemap3">
                     <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=32%C2%B001'00.3%22N%20120%C2%B042'57.1%22E&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=26.323114%C2%B0N%20104.586747%C2%B0E&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
                         </div>
+
                     </div>
                 </div>
                 <button id="btn9">Feedback</button>
@@ -199,27 +176,25 @@
             <!-- Top 4 -->
             <article>
                 <a class="thumbnail" href="images/highest/Full/top4hig02.jpg" data-position="left center">
-                    <h1 class="text">4</h1><img id="thumbnail4" src="images/highest/Thumb/top4height02.jpg" alt="YavuzSultanSelimBridge" height="112px"></a>
-                <h2 class="title-top">Top 4. The Yavuz Sultan Selim Bridge - Istalbul ( Turkey <img src="images/flag/Turkey.svg" alt="turkey" width="3%"> )</h2>
-                <p class="less-cont">Structural height: 322 metres (1,056 ft).</p>
+                    <h1 class="text">4</h1><img id="thumbnail4" src="images/highest/Thumb/top4height02.jpg" alt="Yachi Bridge" height="112px"></a>
+                <h2 class="title-top">Top 4. The Yachi River Bridge ( China <img src="images/flag/China.png" alt="Chna" width="3%"> )</h2>
+                <p class="less-cont">Deck height: 434 m (1,424 ft).</p>
                 <button id="btn10">Information</button>
                 <div id="info4">
                     <ul class="detail-info">
-                        <li>The Yavuz Sultan Selim Bridge (Turkish: Yavuz Sultan Selim Köprüsü) is a bridge for rail and motor vehicle transit over the Bosphorus strait, to the north of two existing suspension bridges in Istanbul, Turkey.</li><br>
-                        <li>The 58.4-metre-wide (192 ft) bridge is 2,164 m (7,100 ft) in length with a main span of 1,408 m (4,619 ft). The main span is the ninth longest suspension bridge in the world.</li><br>
-                        <li>The budgeted cost of the bridge's construction was 4.5 billion TRY (approximately US$2.5 billion as of March 2013). </li><br>
-                        <li>The foundation stone laying ceremony was held on 29 May 2013. The bridge was opened to traffic on 26 August 2016.</li><br>
-                        <li>At 322 m (1,056 ft), the bridge is one of the tallest bridges in the world. After the Millau Viaduct in France, the Pingtang Bridge and the Hutong Yangtze River Bridge in China, it is the fourth-tallest bridge in the world of any
-                            type.
-                        </li>
+                        <li>The Yachi River Bridge is a cable-stayed bridge and crosses the Yachi River between Qianxi County in Bijie and Qingzhen in Guiyang, China.</li><br>
+                        <li>The bridge is the fourth highest in the world. It is also one of the longest cable-stayed bridges with a main span of 800 m (2,600 ft).</li><br>
+                        <li>The western tower is 258.2 m (847 ft) placing it amongst the tallest bridges in the world. </li><br>
+                        <li>Yachi Bridge might also hold the record for the fastest construction ever for a large size cable stayed span with a total construction time of 3 years.(September 2013 - 16 July 2016)
+                        </li><br>
+
                     </ul>
                 </div>
                 <button id="btn11">Site Map</button>
                 <div id="sitemap4">
                     <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=The%20Yavuz%20Sultan%20Selim%20Bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=yachi%20river%20bridge&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
 
-                        </div>
                     </div>
                 </div>
                 <button id="btn12">Feedback</button>
@@ -230,9 +205,87 @@
                     </form>
                 </div>
             </article>
-
-
         </section>
+        <!---Booking Modal-->
+        <div id="signupModal" class="modal fade text-dark text-center">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-light">Booking Form</h5>
+                        <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+                    </div>
+                    <div class="modal-body px-5">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control pl-3" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control pl-3" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control pl-3" placeholder="Telephone Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="location" class="form-control">
+                                        <option disabled selected value="">Your loccation</option>
+                                        <option value="">China</option>
+                                        <option value="">France</option>
+                                        <option value="">Indonesia</option>
+                                        <option value="">Italia</option>
+                                        <option value="">Spain</option>
+                                        <option value="">Turkey</option>
+                                        <option value="">USA</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <select name="traffic" class="form-control">
+                                        <option disabled selected value="">Your traffic type</option>
+                                        <option value="">Airplane</option>
+                                        <option value="">Bus</option>
+                                    </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input style="cursor: context-menu" id="departure" placeholder="Departure Date" class="date-picker form-control pl-3" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input style="cursor: context-menu" id="arrival" placeholder="Arrival Date" class="date-picker form-control pl-3" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control pl-3" placeholder="Ticket">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary mx-auto">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---Booking Modal-->
+        <script>
+            $(".date-picker").focus(function() {
+                $(this).attr('type', 'date');
+            });
+            $(".close").click(function() {
+                $('.date-picker').val("");
+                $('#departure').attr({
+                    type: "text",
+                    placeholder: "Departure Date"
+                });
+                $('#arrival').attr({
+                    type: "text",
+                    placeholder: "Arrival Date"
+                });
+            });
+        </script>
         <!-- Footer -->
         <footer id="footer">
             <ul class="copyright">
@@ -241,6 +294,7 @@
             </ul>
         </footer>
     </div>
+
     <!-- Scripts -->
     <script src="assets/js/information.js"></script>
     <script src="assets/js/browser.min.js"></script>
@@ -248,6 +302,9 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
